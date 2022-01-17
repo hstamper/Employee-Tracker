@@ -1,22 +1,22 @@
-const mysql = require('mysql2');
+// const mysql = require('mysql2');
 
 
-let connection = mysql.createConnection(
-    {
-        host: 'localhost',
-        // Your MySQL username,
-        user: 'root',
-        // Your MySQL password
-        password: 'password',
-        database: 'tracker'
-    },
-    console.log('Connected to the tracker database')
-);
+// let connection = mysql.createConnection(
+//     {
+//         host: 'localhost',
+//         // Your MySQL username,
+//         user: 'root',
+//         // Your MySQL password
+//         password: 'password',
+//         database: 'tracker'
+//     },
+//     console.log('Connected to the tracker database')
+// );
 
-connection.connect(function (err) {
-    if (err) throw err;
-    console.log("connected as id " + connection.threadId + "\n");
-    runSearch();
-});
+// connection.connect(function (err) {
+//     if (err) throw err;
+//     console.log("connected as id " + connection.threadId + "\n");
+//     runSearch();
+// });
 
-module.exports = connection;
+// module.exports = connection;
